@@ -33,13 +33,6 @@ function renderLicenseLink(license) {
 }
 
 // TODO: Create a function that returns the license section of README
-function renderLicenseSection(license) {
-  if (license === "") {
-    return "";
-  }
-}
-  return "### License";
-
 // This project is licensed under the ${license} License.
 function renderLicenseSection(license) {
   if (license === "") {

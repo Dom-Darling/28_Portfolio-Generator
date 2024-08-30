@@ -44,6 +44,18 @@ const questions = [
         'Apache License 2.0',
         'GPL'
     ],
+    name: 'license',
+},
+{
+    type: 'input',
+    message: 'Who Contributed:',
+    name: 'contributing',
+},
+//Contributing Guidelines
+{
+    type: 'input',
+    message: 'How to test:',
+    name: 'tests',
 },
 ];
 
@@ -55,7 +67,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((data) => {
-        writeToFile("README.md", generateMarkdown(data));
+        writeToFile("output/README.md", generateMarkdown(data));
     });
 }
 
